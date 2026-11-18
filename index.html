@@ -41,6 +41,15 @@ h1{margin:36px 0 0;font-family:'Noto Serif KR',serif;font-weight:700;font-size:3
 .addr{margin:12px 0 0;font-size:16px;line-height:1.6;color:#2E3442}
 .sign{margin:40px 0 0;font-family:'Noto Serif KR',serif;font-weight:700;font-size:20px;letter-spacing:0;color:#1A2639;white-space:nowrap}
 .logo{margin:24px auto 0;display:block;width:200px;height:auto}
+.mapbox{margin-top:14px;border:1px solid #CDBF9E;background:#EFE8DA;aspect-ratio:4/3;overflow:hidden}
+.mapbox iframe{width:100%;height:100%;border:0;display:block}
+.maps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px auto 0;max-width:360px}
+.mbtn{display:block;padding:14px 8px;border:1.5px solid #6E6140;color:#4A4128;font-size:17px;font-weight:700;text-decoration:none;border-radius:6px}
+.way{margin-top:22px;border-top:1px solid #CDBF9E;text-align:left}
+.wrow{display:flex;gap:14px;padding:16px 4px;border-bottom:1px solid #E2D8C2}
+.wl{margin:0;flex:0 0 56px;font-size:15px;font-weight:700;color:#5E5232;line-height:1.7}
+.wv{margin:0;font-size:17px;line-height:1.7;color:#2E3442}
+.wv b{color:#1A2639}
 </style>
 </head>
 <body>
@@ -62,26 +71,14 @@ h1{margin:36px 0 0;font-family:'Noto Serif KR',serif;font-weight:700;font-size:3
 </div>
 
 <p class="lb" style="margin-top:36px">오시는 길</p>
-<svg class="map" viewBox="0 0 580 250" role="img" aria-label="약도: 판교역 북쪽으로 도보 약 3분 거리에 코트야드 바이 메리어트 서울 판교가 있고, 판교역 남쪽에 현대백화점 판교점이 있습니다">
-<rect x="0.5" y="0.5" width="579" height="249" fill="#EFE8DA" stroke="#E2D8C2"></rect>
-<path d="M0 182H580M232 0V250M0 70H232" stroke="#E2D8C2" stroke-width="10" fill="none"></path>
-<g transform="translate(36 34)" fill="none" stroke="#3B4252" stroke-width="1.2"><path d="M0 14L6 -2L12 14L6 10Z" fill="#3B4252"></path></g>
-<text x="42" y="64" font-size="16" fill="#3B4252" text-anchor="middle" font-family="Noto Sans KR, sans-serif">N</text>
-<path d="M300 132C296 108 290 84 286 62" stroke="#A8946A" stroke-width="2" stroke-dasharray="4 5" fill="none"></path>
-<text x="276" y="108" font-size="17" fill="#6E6140" text-anchor="end" font-family="Noto Sans KR, sans-serif">도보 약 3분</text>
-<circle cx="284" cy="48" r="10" fill="#A8946A"></circle>
-<circle cx="284" cy="48" r="4" fill="#F7F3EB"></circle>
-<text x="300" y="44" font-size="20" font-weight="700" fill="#1A2639" font-family="Noto Sans KR, sans-serif">코트야드 바이 메리어트</text>
-<text x="300" y="68" font-size="17" fill="#6E6140" font-family="Noto Sans KR, sans-serif">8층 파고다룸</text>
-<circle cx="302" cy="144" r="9" fill="#F7F3EB" stroke="#A8946A" stroke-width="2"></circle>
-<circle cx="302" cy="144" r="3.5" fill="#A8946A"></circle>
-<text x="320" y="140" font-size="19" font-weight="500" fill="#1A2639" font-family="Noto Sans KR, sans-serif">판교역</text>
-<text x="320" y="160" font-size="16" fill="#3B4252" font-family="Noto Sans KR, sans-serif">신분당선 · 경강선</text>
-<rect x="318" y="206" width="12" height="12" fill="none" stroke="#3B4252" stroke-width="1.2"></rect>
-<text x="338" y="216" font-size="17" fill="#3B4252" font-family="Noto Sans KR, sans-serif">현대백화점 판교점</text>
-</svg>
-<p class="addr">경기 성남시 분당구 판교역로192번길 12<br>(약도는 참고용입니다)</p>
-<a class="btn2" href="https://map.naver.com/p/search/%EC%BD%94%ED%8A%B8%EC%95%BC%EB%93%9C%20%EB%B0%94%EC%9D%B4%20%EB%A9%94%EB%A6%AC%EC%96%B4%ED%8A%B8%20%EC%84%9C%EC%9A%B8%20%ED%8C%90%EA%B5%90">네이버 지도에서 보기</a>
+<div class="mapbox"><iframe src="https://maps.google.com/maps?q=%EA%B2%BD%EA%B8%B0%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EB%B6%84%EB%8B%B9%EA%B5%AC%20%ED%8C%90%EA%B5%90%EC%97%AD%EB%A1%9C192%EB%B2%88%EA%B8%B8%2012%20%EC%BD%94%ED%8A%B8%EC%95%BC%EB%93%9C%20%EB%B0%94%EC%9D%B4%20%EB%A9%94%EB%A6%AC%EC%96%B4%ED%8A%B8%20%EC%84%9C%EC%9A%B8%20%ED%8C%90%EA%B5%90&z=16&hl=ko&output=embed" title="코트야드 바이 메리어트 서울 판교 위치 지도" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+<p class="v1" style="margin-top:16px">코트야드 바이 메리어트 서울 판교 8층</p>
+<p class="addr" style="margin-top:4px">경기 성남시 분당구 판교역로192번길 12</p>
+<div class="maps"><a class="mbtn" href="https://map.naver.com/p/search/%EC%BD%94%ED%8A%B8%EC%95%BC%EB%93%9C%20%EB%B0%94%EC%9D%B4%20%EB%A9%94%EB%A6%AC%EC%96%B4%ED%8A%B8%20%EC%84%9C%EC%9A%B8%20%ED%8C%90%EA%B5%90">네이버 지도</a><a class="mbtn" href="https://map.kakao.com/link/search/%EC%BD%94%ED%8A%B8%EC%95%BC%EB%93%9C%20%EB%B0%94%EC%9D%B4%20%EB%A9%94%EB%A6%AC%EC%96%B4%ED%8A%B8%20%EC%84%9C%EC%9A%B8%20%ED%8C%90%EA%B5%90">카카오맵</a></div>
+<div class="way">
+<div class="wrow"><p class="wl">지하철</p><p class="wv">신분당선 · 경강선 <b>판교역</b> 하차<br>호텔까지 도보 약 3분</p></div>
+<div class="wrow"><p class="wl">자가용</p><p class="wv">내비게이션에 <b>"코트야드 메리어트 판교"</b> 검색<br>호텔 주차장 이용 · 주차 등록 시 <b>4시간 무료</b></p></div>
+</div>
 
 <p class="sign">대표이사 류용태 · 오광연 드림</p>
 <img class="logo" src="logo.png" alt="WELLCOMET TECHNOLOGY">
